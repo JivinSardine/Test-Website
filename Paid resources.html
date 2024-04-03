@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdArtDreams</title>
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background:repeating-linear-gradient(#df5349,#6260ec,#68ec6f);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            width: 100%;
+        }
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: -5px;
+            text-align: center;
+        }
+        /* Navigation */
+        nav {
+            background-color: #666;
+            padding: 10px;
+            text-align: center;
+            word-spacing: 170px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+       
+       
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        img {
+            width: 60px; /* logo style */
+            margin-right: 1200px;
+            margin-bottom: 30px;
+
+          
+        }
+
+        pre{
+
+            font-size: x-large;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #fff;
+        }
+
+
+        h3{
+            font-size: xx-large;
+            color: #fff;
+
+
+        }
+
+        h1{
+
+    
+            position: absolute; /* Position the button relative to the viewport */
+            left: 100px; /* Set distance from the left */
+            top: 55px;
+        }
+
+
+        h2{
+
+            font-size: xx-large;
+            top: 5px;
+
+        }
+
+        h4{
+
+
+            font-size: x-large;
+            color: #fff;
+        }
+
+
+
+
+
+        .button {
+        position: fixed; /* Position the button relative to the viewport */
+        bottom: 70px; /* Set distance from the bottom */
+        left: 20px; /* Set distance from the left */
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #000000;
+        text-decoration: none;
+        border: 2px solid #007bff;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+
+.getaccess {
+        position: fixed; /* Position the button relative to the viewport */
+        bottom: 70px; /* Set distance from the bottom */
+        right: 20px; /* Set distance from the left */
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #000000;
+        text-decoration: none;
+        border: 2px solid #007bff;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+
+.Buyourproducts {
+        position: fixed; /* Position the button relative to the viewport */
+        bottom: 70px; /* Set distance from the bottom */
+        right: 700px; /* Set distance from the right */
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #000000;
+        text-decoration: none;
+        border: 2px solid #007bff;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+
+
+#video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        #video-background video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: #fff;
+            padding: 50px;
+        }
+
+
+
+.Buyourproducts:hover {
+    background-color: #00ff4c;
+    border-color: #ff0303;
+}
+
+.getaccess:hover {
+    background-color: #00ff4c;
+    border-color: #ff0303;
+}
+
+/* CSS for hover effect */
+.button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+            
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EdArtDreams</h1>
+        <h2>Premium Resources Access</h2>
+        
+        <img src="logo.png" alt="Description of the image">
+    </header>
+    <nav>
+
+         <!--  Redirect Page  -->
+
+         <a href="Home.html">Home</a>
+        <a href="Resources.html">Free-Resources</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+        <a href="signout.html">Logout</a>
+
+    </nav>
+    
+       
+
+    <a href="#" class="button" onclick="goBack()">Go Back</a>
+
+    <script>
+    function goBack() {
+      window.history.back();
+    }
+</script>
+
+
+<a href="verifi.html" class="getaccess">Already purchased click to Get Access</a>
+
+<a href="buy our products.html" class="Buyourproducts">Buy our products</a>
+
+    
+
+
+    <!--
+        
+        "To add an new resources use this code"
+        
+        <div class="resource-card">
+            <h2>Resource Title 3</h2>
+            <p>Description of the resource goes here.</p>
+            <a href="#">Access Resource</a>
+        </div> 
+    -->
+
+
+
+   
+        
+        
+        
+        
+        
+        <!-- Content of website -->
+        
+        
+        
+        
+        
+        
+        <h3>Why Premium?</h3>
+        <pre>        In today's information-rich world, the pursuit of knowledge has become a cornerstone of personal and professional 
+        development. With a plethora of resources available at our fingertips, both free and paid, the decision of where to 
+        invest one's resources can be daunting. While free resources undoubtedly offer accessibility, paid resources often 
+        provide a distinct advantage in terms of depth, quality, and support.</pre>
+
+        <h4>Soooo.... What are you waiting for? Purchase our products and enjoy our premium features!
+        </h4>
+        
+
+
+
+
+
+
+
+
+        <div id="video-background">
+            <video autoplay loop muted>
+            <source src="general.mp4" type="video/mp4">      
+
+</div>
+    <footer>
+        <p>&copy; 2024 EdArtDreams. All rights reserved.</p>
+    </footer>
+</body>
+</html>

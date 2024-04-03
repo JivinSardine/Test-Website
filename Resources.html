@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdArtDreams</title>
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background:repeating-linear-gradient(#df5349,#6260ec,#68ec6f);
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+
+        }
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: -5px;
+            text-align: center;
+        }
+        /* Navigation */
+        nav {
+            background-color: #666;
+            padding: 10px;
+            text-align: center;
+            word-spacing: 200px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        /* Resource Cards */
+        .resource-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .resource-card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .resource-card p {
+            margin-bottom: 10px;
+        }
+        .resource-card a {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+        .resource-card a:hover {
+            background-color: #555;
+        }
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+
+        img {
+            width: 60px; /* logo style */
+            margin-right: 1200px;
+            margin-bottom: 30px;
+
+          
+        }
+
+
+
+        h3{
+
+    
+            position: absolute; /* Position the button relative to the viewport */
+            left: 100px; /* Set distance from the left */
+            top: 55px;
+            font-size: xx-large;
+        }
+
+
+        h2{
+
+            font-size: xx-large;
+            top: 5px;
+
+        }
+
+
+
+
+        .button {
+        position: fixed; /* Position the button relative to the viewport */
+        bottom: 70px; /* Set distance from the bottom */
+        left: 20px; /* Set distance from the left */
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #ffffff;
+        text-decoration: none;
+        border: 2px solid #007bff;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* CSS for hover effect */
+.button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+
+#video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        #video-background video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: #fff;
+            padding: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Free Resources</h1>
+        <h3>EdArtDreams</h3>
+        <img src="logo.png" alt="Description of the image">
+    </header>
+    <nav>
+
+         <!--  Redirect Page  -->
+
+        <a href="Home.html">Home</a>
+        <a href="Paid resources.html">Paid-Resources</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+        <a href="signout.html">Logout</a>
+    </nav>
+
+
+    <a href="#" class="button" onclick="goBack()">Go Back</a>
+
+    <script>
+    function goBack() {
+      window.history.back();
+    }
+</script>
+
+
+
+
+
+    <div class="container">
+        <div class="resource-card">
+            <h1>Alphabet FlashCards</h1>
+            <p>This free pack of flashcards come with "26 English Alphabet" in an attractive design.</p>
+            <a href="https://drive.google.com/file/d/1KZSgSDq294BuH9vyHjiBeCRS83PJjC2t/preview" target="_blank">Get Resources</a>
+        </div>
+        <div class="resource-card">
+            <h1>Numbers FlashCards</h1>
+            <p>This free pack of flash cards contains mumerical numbers from 1(one) to 9(nine).</p>
+            <a href="https://drive.google.com/file/d/1KZSgSDq294BuH9vyHjiBeCRS83PJjC2t/preview" target="_blank">Get Resources</a>
+        </div>
+       
+
+    <!--
+        
+        "To add an new resources use this code"
+        
+        <div class="resource-card">
+            <h2>Resource Title 3</h2>
+            <p>Description of the resource goes here.</p>
+            <a href="#">Access Resource</a>
+        </div> 
+    -->
+
+
+
+    <div id="draggable" style="width: 100vw; height: 100vh; ">
+       
+    
+      </div>
+      <script>
+      // Get the draggable element
+      var draggable = document.getElementById("draggable");
+      
+      // Initialize variables to store mouse position
+      var offsetX, offsetY;
+      
+      // Function to handle mouse down event
+      function mouseDown(event) {
+        // Calculate offset from mouse position to top-left corner of the element
+        offsetX = event.clientX - draggable.getBoundingClientRect().left;
+        offsetY = event.clientY - draggable.getBoundingClientRect().top;
+        
+        // Attach event listeners for mouse move and mouse up events
+        document.addEventListener("mousemove", mouseMove);
+        document.addEventListener("mouseup", mouseUp);
+      }
+      
+      // Function to handle mouse move event
+      function mouseMove(event) {
+        // Calculate new position of the draggable element
+        var newX = event.clientX - offsetX;
+        var newY = event.clientY - offsetY;
+        
+        // Update position of the draggable element
+        draggable.style.left = newX + "px";
+        draggable.style.top = newY + "px";
+      }
+      
+      // Function to handle mouse up event
+      function mouseUp() {
+        // Remove event listeners for mouse move and mouse up events
+        document.removeEventListener("mousemove", mouseMove);
+        document.removeEventListener("mouseup", mouseUp);
+      }
+      
+      // Attach event listener for mouse down event on the draggable element
+      draggable.addEventListener("mousedown", mouseDown);
+      </script>
+
+<div id="video-background">
+    <video autoplay loop muted>
+    <source src="general.mp4" type="video/mp4"> 
+
+
+    </div>
+</div>
+    <footer>
+        <p>&copy; 2024 EdArtDreams. All rights reserved.</p>
+    </footer>
+</body>
+</html>
